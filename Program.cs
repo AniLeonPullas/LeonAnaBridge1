@@ -23,10 +23,21 @@ namespace LeonAna
             // Se crea el bridge
 
             //Pirmera implementacion
-           // CAbstraction bridge = new CAbstraction(new CImplementacion(), productos);
-           
+            // CAbstraction bridge = new CAbstraction(new CImplementacion(), productos);
+
             //segunda implementacion 
-            CAbstraction bridge = new CAbstraction(new CImplementacion2(), productos);
+            //CAbstraction bridge = new CAbstraction(new CImplementacion2(), productos);
+
+
+            //segunda implementacion 
+            //CAbstraction bridge = new CAbstraction(new CImplementacion2(), productos);
+
+            //tercera implementacion 
+            //CAbstraction bridge = new CAbstraction(new CImplementacion3(), productos);
+
+            // otra manera de implementas, en donde ahora se ecnuentra 3 podra colocar 1, 2 o 3 dependiendo de la implementacion que desee realizar
+            CAbstraction bridge = new CAbstraction(3, productos);
+
             bridge.MostrarTotales();
             bridge.Listar();
         }
